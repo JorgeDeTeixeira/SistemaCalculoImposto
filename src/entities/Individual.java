@@ -29,4 +29,9 @@ public class Individual extends TaxPayer {
 		}
 	}
 
+	@Override
+	public String toString() {
+		return getName() + ": R$ " + String.format("%.2f", tax());
+	}
+
 }
